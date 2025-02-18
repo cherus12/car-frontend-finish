@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+	.MuiButton-root {
+		font-size: 0.75rem; /* Уменьшение текста */
+		padding: 4px 8px; /* Уменьшение отступов */
+	}
+}
+
+@media (max-width: 490px) {
+	.MuiButton-root {
+		font-size: 0.55rem;
+		padding: 3px 6px;
+	}
+}

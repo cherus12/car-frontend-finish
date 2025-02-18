@@ -1,0 +1,22 @@
+@media (max-width: 610px) {
+	.mark-logo-group a img {
+		width: 35px !important;
+		height: 35px !important;
+	}
+}
+
+@media (max-width: 376px) {
+	.mark-logo-group a img {
+		width: 35px !important;
+		height: 35px !important;
+	}
+
+	.mark-logo-group a:nth-child(n + 8) {
+		display: none;
+	}
+
+	.mark-logo-group {
+		display: flex;
+		justify-content: space-between;
+	}
+}
