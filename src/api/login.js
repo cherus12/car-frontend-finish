@@ -2,7 +2,7 @@ import axios from 'axios'
 
 export const login = async data => {
 	try {
-		const res = await axios.post('http://localhost:1337/api/auth/local', {
+		const res = await axios.post(import.meta.env.REACT_APP_API_URL, {
 			identifier: data.username,
 			password: data.password,
 		})
