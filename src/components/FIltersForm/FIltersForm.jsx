@@ -17,7 +17,6 @@ import { useForm } from 'react-hook-form'
 import { useDispatch, useSelector } from 'react-redux'
 import { setFilter } from '../../slice/filterSlice.js'
 import { queryModel } from '../../api/query.js'
-import { isOperator } from '@strapi/utils'
 import { CustomFormControl } from '../../Ui/Form/FormControl.jsx'
 
 export const FIltersForm = () => {
