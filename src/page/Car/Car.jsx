@@ -4,8 +4,8 @@ import { ArrowBack, Message, Photo } from '@mui/icons-material'
 import axios from 'axios'
 import useFetch from '../../hooks/useFetch.jsx'
 import { useLocation } from 'react-router-dom'
-import { Slide } from '../../components/Slide/Slide.js'
-import { Chat } from '../../components/Chat/Chat.tsx'
+import { Slide } from '../../components/Slide/Slide.jsx'
+import { Chat } from '../../components/Chat/Chat.jsx'
 
 export const Car = () => {
 	const pathname = useLocation().pathname

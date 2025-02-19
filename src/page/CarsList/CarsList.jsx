@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import './carslist.scss'
-import { FIltersForm } from '../../components/FIltersForm/FIltersForm'
-import { CarsCard } from '../../components/CarsCard/CarsCard'
+import { FIltersForm } from '../../components/FIltersForm/FIltersForm.jsx'
+import { CarsCard } from '../../components/CarsCard/CarsCard.jsx'
 import useFetch from '../../hooks/useFetch.jsx'
 import { Link, useLocation } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { buildQueryString } from '../../api/query.js'
-import { ListingFilter } from '../../components/ListingFilter/ListingFilter.js'
-import { SmallArrow } from '../../Ui/Arrow/SmallArrow.js'
+import { ListingFilter } from '../../components/ListingFilter/ListingFilter.jsx'
+import { SmallArrow } from '../../Ui/Arrow/SmallArrow.jsx'
 
 export const CarsList = () => {
 	const [page, setPage] = useState(1)

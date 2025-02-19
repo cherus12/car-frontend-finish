@@ -5,9 +5,9 @@ import { Button, FormControl, MenuItem, Select } from '@mui/material'
 import { get, useForm } from 'react-hook-form'
 import axios from 'axios'
 import useFetch from '../../hooks/useFetch.jsx'
-import { Characteristic } from '../../components/Characteristic/Characteristic.js'
-import { Input } from '../../Ui/Input/Input.js'
-import { SelectTime } from '../../Ui/Select/SelectTime.js'
+import { Characteristic } from '../../components/Characteristic/Characteristic.jsx'
+import { Input } from '../../Ui/Input/Input.jsx'
+import { SelectTime } from '../../Ui/Select/SelectTime.jsx'
 import { getUserCars, getUsers, carAdd } from '../../api/car-add.js'
 
 export const CarAdd = () => {

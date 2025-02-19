@@ -1,8 +1,8 @@
 import React from 'react'
 import './layout.scss'
-import Header from '../Header/Header.tsx'
-import { Navbar } from '../Navbar/Navbar'
-import { Footer } from '../Footer/Footer'
+import Header from '../Header/Header.jsx'
+import { Navbar } from '../Navbar/Navbar.jsx'
+import { Footer } from '../Footer/Footer.jsx'
 import { Outlet } from 'react-router-dom'
 
 export const Layout = ({ children }) => {

@@ -63,9 +63,8 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }))
 
 export default function Header() {
-	const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null)
-	const [mobileMoreAnchorEl, setMobileMoreAnchorEl] =
-		React.useState<null | HTMLElement>(null)
+	const [anchorEl, setAnchorEl] = React.useState(null)
+	const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null)
 
 	const isMenuOpen = Boolean(anchorEl)
 	const isMobileMenuOpen = Boolean(mobileMoreAnchorEl)
@@ -77,7 +76,7 @@ export default function Header() {
 
 	// const token = localStorage.getItem('token')
 
-	const handleProfileMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
+	const handleProfileMenuOpen = event => {
 		setAnchorEl(event.currentTarget)
 	}
 
@@ -90,7 +89,7 @@ export default function Header() {
 		handleMobileMenuClose()
 	}
 
-	const handleMobileMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
+	const handleMobileMenuOpen = event => {
 		setMobileMoreAnchorEl(event.currentTarget)
 	}
 

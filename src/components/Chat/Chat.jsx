@@ -3,10 +3,10 @@ import './chat.scss'
 import { Close } from '@mui/icons-material'
 import useFetch from '../../hooks/useFetch.jsx'
 import axios from 'axios'
-import { ChatSidebar } from './ChatSidebar.tsx'
-import { ChatRight } from './ChatRight.tsx'
+import { ChatSidebar } from './ChatSidebar.jsx'
+import { ChatRight } from './ChatRight.jsx'
 import { io } from 'socket.io-client'
-import { useSocketQuery } from '../../hooks/useSocketQuery.tsx'
+import { useSocketQuery } from '../../hooks/useSocketQuery.jsx'
 
 export const Chat = ({ setIsOpen }) => {
 	const [currentChat, setCurrentChat] = useState()

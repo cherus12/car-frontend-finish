@@ -2,8 +2,8 @@ import { FormControl, MenuItem, Select, styled } from '@mui/material'
 import React, { useState } from 'react'
 
 export const ListingFilter = () => {
-	const [sort, setSort] = useState<string>('')
-	const [date, setDate] = useState<string>('')
+	const [sort, setSort] = useState('')
+	const [date, setDate] = useState('')
 
 	const CustomizedMenuItem = styled(MenuItem)`
 		color: black;

@@ -5,16 +5,16 @@ import {
 	RouterProvider,
 	Routes,
 } from 'react-router-dom'
-import { Layout } from './components/Layout/Layout'
-import { Home } from './page/Home/Home'
-import { CarsList } from './page/CarsList/CarsList'
-import { Car } from './page/Car/Car'
-import { CarAdd } from './page/CarAdd/CarAdd.tsx'
-import { Login } from './page/Login/Login'
-import { Register } from './page/Register/Register'
-import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute'
-import { Auth } from './page/Auth/Auth.tsx'
-import { MyAds } from './page/MyAds/MyAds.tsx'
+import { Layout } from './components/Layout/Layout.jsx'
+import { Home } from './page/Home/Home.jsx'
+import { CarsList } from './page/CarsList/CarsList.jsx'
+import { Car } from './page/Car/Car.jsx'
+import { CarAdd } from './page/CarAdd/CarAdd.jsx'
+import { Login } from './page/Login/Login.jsx'
+import { Register } from './page/Register/Register.jsx'
+import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute.jsx'
+import { Auth } from './page/Auth/Auth.jsx'
+import { MyAds } from './page/MyAds/MyAds.jsx'
 
 const router = createBrowserRouter([
 	{

@@ -10,7 +10,7 @@ import {
 	styled,
 	TextField,
 } from '@mui/material'
-import { FiltersFormModal } from './FiltersFormModal/FiltersFormModal.js'
+import { FiltersFormModal } from './FiltersFormModal/FiltersFormModal.jsx'
 import useFetch from '../../hooks/useFetch.jsx'
 import axios from 'axios'
 import { useForm } from 'react-hook-form'
@@ -18,7 +18,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { setFilter } from '../../slice/filterSlice.js'
 import { queryModel } from '../../api/query.js'
 import { isOperator } from '@strapi/utils'
-import { CustomFormControl } from '../../Ui/Form/FormControl.js'
+import { CustomFormControl } from '../../Ui/Form/FormControl.jsx'
 
 export const FIltersForm = () => {
 	const [mark, setMark] = useState(null)

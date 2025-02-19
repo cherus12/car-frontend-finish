@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import useFetch from '../../hooks/useFetch.jsx'
 import axios from 'axios'
-import { CarsCard } from '../../components/CarsCard/CarsCard.js'
+import { CarsCard } from '../../components/CarsCard/CarsCard.jsx'
 import { useGetUserProfileQuery } from '../../api/users.js'
 import '../CarsList/carslist.scss'
 
