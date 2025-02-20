@@ -28,7 +28,9 @@ export const CarsList = () => {
 	const queryToString = buildQueryString(filter)
 
 	const { data, error, reFetch, isLoading, totalCount } = useFetch(
-		`http://localhost:1337/api/cars?populate=*${queryToString}&pagination[page]=${page}&pagination[pageSize]=10`
+		`${
+			import.meta.env.REACT_APP_API_TOKEN
+		}cars?populate=*${queryToString}&pagination[page]=${page}&pagination[pageSize]=10`
 	)
 
 	// console.log(data, 'data-list')
