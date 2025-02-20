@@ -2,10 +2,13 @@ import axios from 'axios'
 
 export const login = async data => {
 	try {
-		const res = await axios.post(`${import.meta.env.REACT_APP_API_URL}login`, {
-			identifier: data.username,
-			password: data.password,
-		})
+		const res = await axios.post(
+			`https://car-backend-finish.onrender.com/api/login`,
+			{
+				identifier: data.username,
+				password: data.password,
+			}
+		)
 		localStorage.setItem('token', res.data.jwt)
 		localStorage.setItem(
 			'user',

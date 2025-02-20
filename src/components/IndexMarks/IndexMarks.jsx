@@ -5,7 +5,9 @@ import { Button } from '@mui/material'
 import useFetch from '../../hooks/useFetch.jsx'
 
 export const IndexMarks = () => {
-	const { data, error } = useFetch(`http://localhost:1337/api/marks`)
+	const { data, error } = useFetch(
+		`https://car-backend-finish.onrender.com/api/marks`
+	)
 
 	console.log(data, 'data-marks')
 
